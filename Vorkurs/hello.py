@@ -1,19 +1,15 @@
 import math
 
-zahl1 = float(input("1. Zahl"))
-operator = input("Operator")
-zahl2 = float (input("2. Zahl"))
-
-match operator:
-    case "+":
-        print(f"{zahl1 + zahl2}")
-    case "-":
-         print(f"{zahl1 - zahl2}")
-    case "*":
-        print(f"{zahl1 * zahl2}")
-    case "/":
-        print(f"{zahl1 / zahl2}")
-
+zahl = int(input("Bitte gebe eine Zahl ein"))
+test = False
+for i in range (2, zahl):
+    for j in range (2, i):
+        m = i % j
+        if i % j == 0:
+            test = True
+            break
+    if  not test:
+     print(i)
 
 
 
