@@ -1,6 +1,19 @@
 import math
-eingabe = float(input ("Geben Sie eine Zahl ein"))
 
-for i in range(1, 11):
-    print(f"{i} * {eingabe} = {(eingabe * i) / (11 - i)} * {11-i}")
+zahl1 = float(input("1. Zahl"))
+operator = input("Operator")
+zahl2 = float (input("2. Zahl"))
+
+match operator:
+    case "+":
+        print(f"{zahl1 + zahl2}")
+    case "-":
+         print(f"{zahl1 - zahl2}")
+    case "*":
+        print(f"{zahl1 * zahl2}")
+    case "/":
+        print(f"{zahl1 / zahl2}")
+
+
+
 
