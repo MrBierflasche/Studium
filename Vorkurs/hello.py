@@ -3,29 +3,16 @@ import time
 def eingabe() :
     return int(input("Bitte Zahl eingeben! "))
 
-def größte(zahlen):
-    rückgabe = zahlen[0]
-    for i in zahlen:
-        if i > rückgabe:
-            rückgabe = i
-            
-    print (rückgabe)
+def mathe(zahl):
+    for i in range(1, zahl +1 ):  
+     print(f"{i}^2 = {i * i}")     
+   
 
-def kleinste(zahlen):
-    rückgabe = zahlen[0]
-    for i in zahlen:
-        if i < rückgabe:
-            rückgabe = i
-            
-    print (rückgabe)
 def main():
     
-    zahlen = [] 
-    for i in range(0,3):
-        zahlen.append(eingabe())
+    zahl = eingabe()
     start = time.time()
-    größte(zahlen)
-    kleinste(zahlen)
+    mathe(zahl)
     end = time.time()
     print(end - start)
 
