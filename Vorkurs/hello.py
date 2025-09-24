@@ -1,15 +1,15 @@
 import math
-
-zahl = int(input("Bitte gebe eine Zahl ein"))
-test = False
-for i in range (2, zahl):
-    for j in range (2, i):
-        m = i % j
-        if i % j == 0:
-            test = True
-            break
-    if  not test:
-     print(i)
-
+outputs = []
+counter = 0
+stopp = input("Bitte geben Sie ein Wort ein. ")
+while ( stopp != "stopp"):
+    outputs.append( stopp )
+    counter = counter +1 
+    print( f"Es wurde {counter} nicht Stopp ausgegeben.")
+    for i in outputs:
+         print(i)
+            
+    stopp = input("Bitte geben Sie ein Wort ein. ")
+    
 
 
