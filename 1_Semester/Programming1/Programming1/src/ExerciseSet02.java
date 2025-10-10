@@ -7,6 +7,9 @@ public class ExerciseSet02 {
         return result;
     }
     public static void main(String[] args) {
-        System.out.println(computeSum(10));
+        int num = Terminal.readInt("Provide a number");
+        System.out.println(computeSum(num));
     }
+
+
 }
