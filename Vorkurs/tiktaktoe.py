@@ -57,6 +57,19 @@ def eingabeSpieler(currentPlayer, spielfeld):
     print(f"CurrentPlayer: {currentPlayer}")
     eingabeColumn = int(input("Enter Column: (0,1,2)")) 
     eingabeRow = int(input("Enter Row: (0,1,2)"))
+
+    if(eingabeColumn != 0 and eingabeColumn != 1 and eingabeColumn != 2):
+        eingabeColumn = int(input("Enter Column: (0,1,2)")) 
+    
+        if(eingabeRow != 0 and eingabeRow != 1 and eingabeRow != 2):
+         eingabeRow = int(input("Enter Row: (0,1,2)"))
+    
+    while spielfeld[eingabeRow] [eingabeColumn] != "-" and spielfeld[eingabeRow] [eingabeColumn] != currentPlayer:
+        eingabeColumn = int(input("Enter Column: (0,1,2)")) 
+        if(eingabeColumn != 0 and eingabeColumn != 1 and eingabeColumn != 2):
+            continue
+        eingabeRow = int(input("Enter Row: (0,1,2)"))
+    
     spielfeld[eingabeRow][eingabeColumn] = currentPlayer
     
     if(currentPlayer == "X"):
