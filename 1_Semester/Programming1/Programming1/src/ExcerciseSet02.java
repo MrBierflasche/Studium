@@ -1,4 +1,4 @@
-public class ExerciseSet02 {
+public class ExcerciseSet02 {
     public static int computeSum(int number) {
         int result = 0; int i = 1;
         while (i <= number) {
