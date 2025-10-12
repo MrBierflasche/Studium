@@ -7,13 +7,36 @@ public class ExcerciseSet03 {
 //       System.out.println("Anzahl Tage des Monats: " + getDaysOfMonth(2, 2000));
 //       System.out.println("Anzahl Tage des Monats: " + getDaysOfMonth(2, 2100));
 //       System.out.println("Anzahl Tage des Monats: " + getDaysOfMonth(2, 2103));
-
+         getDayOfTheWeek(9, 11, 1989);
+         getDayOfTheWeek(11, 9, 2001);
     }
 
     public static int getDayOfTheWeek(int day, int month, int year){
-        month = month+2;
-        int dayOfTheWeek = day + ((month + 1) * 13) / 5  ;
-        return 0;
+        // März bis Dezember wie üblich die Nummern 3–12 haben, Januar und Februar den Monaten 13 und 14 des Vorjahres entsprechen
+        if (month == 1) {
+            month = 13;
+            year--;
+        }else if (month == 2) {
+            month = 14;
+            year--;
+        }
+
+        int q = day;
+        int m = month;
+
+        // J die Jahrhundertzahl (das sind die ersten beiden Stellen der vierstelligen Jahreszahl)
+        int J = year / 100;
+
+        // K die letzten beiden Stellen der vierstelligen Jahreszahl (für Januar und Februar entsprechend die Zahl des Vorjahres)
+        int K = year % 100;
+
+        // Gaußklammer kann so verwendet werden da keine negativen Zahlen herauskommen und bei der int Division automatisch abgerundet wird
+        int hgreg = (q + ((m + 1) * 13) / 5 + K + (K/ 4) + (J / 4) - 2 * J  ) % 7;
+
+        // Wochentage ändern entsprechend dem Arbeitsblatt
+        int weekday =   ((hgreg + 5) % 7) + 1;
+
+        return weekday;
     }
 
     public static int getDaysOfMonth(int month, int year){
