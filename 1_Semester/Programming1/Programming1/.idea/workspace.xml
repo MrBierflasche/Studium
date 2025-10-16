@@ -4,8 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="1de3e88b-9c8b-4160-ab01-e0638b87170b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+=======
+    <list default="true" id="1de3e88b-9c8b-4160-ab01-e0638b87170b" name="Changes" comment="aufgabe 3 bis getDaysOfMonth">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ExcerciseSet03.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ExcerciseSet03.java" afterDir="false" />
+>>>>>>> 050f0fe36ca2edfa1c9fa3837130bbbd4e75bbaf
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,8 +36,8 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/MrBierflasche/Studium.git&quot;,
-    &quot;accountId&quot;: &quot;70023124-4375-4af2-9a81-0263f2dee44f&quot;
+    &quot;url&quot;: &quot;https://github.com/MrBierflasche/Studium&quot;,
+    &quot;accountId&quot;: &quot;9e55eaf6-66e2-4b8c-9d89-ae02b5160ec2&quot;
   }
 }</component>
   <component name="ProjectColorInfo">{
@@ -46,26 +52,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.ExerciseSet02.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Training25BeaverDemo.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Training25VPrinter.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/morit/studium/1_Semester/Programming1/Programming1/src/Main.java&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.ExcerciseSet02.executor": "Run",
+    "Application.ExcerciseSet03.executor": "Debug",
+    "Application.ExerciseSet02.executor": "Run",
+    "Application.Training25BeaverDemo.executor": "Run",
+    "Application.Training25VPrinter.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "junie.onboarding.icon.badge.shown": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/morit/Studium/1_Semester/Programming1/Programming1",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "C:/Users/morit/studium/1_Semester/Programming1/Programming1/src/Main.java",
+    "settings.editor.selected.configurable": "configurable.group.appearance",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\morit\studium\1_Semester\Programming1\Programming1\src" />
@@ -88,8 +100,15 @@
       <updated>1760079890941</updated>
       <workItem from="1760079893023" duration="818000" />
       <workItem from="1760080843095" duration="765000" />
+<<<<<<< HEAD
       <workItem from="1760110314840" duration="1918000" />
       <workItem from="1760604445069" duration="953000" />
+=======
+      <workItem from="1760110314840" duration="1170000" />
+      <workItem from="1760118251209" duration="174000" />
+      <workItem from="1760279160292" duration="144000" />
+      <workItem from="1760279490492" duration="2489000" />
+>>>>>>> 050f0fe36ca2edfa1c9fa3837130bbbd4e75bbaf
     </task>
     <task id="LOCAL-00001" summary="init 2">
       <option name="closed" value="true" />
@@ -107,6 +126,7 @@
       <option name="project" value="LOCAL" />
       <updated>1760110497886</updated>
     </task>
+<<<<<<< HEAD
     <task id="LOCAL-00003" summary="aufgab2 teilweise fertig">
       <option name="closed" value="true" />
       <created>1760111677398</created>
@@ -116,6 +136,25 @@
       <updated>1760111677398</updated>
     </task>
     <option name="localTasksCounter" value="4" />
+=======
+    <task id="LOCAL-00003" summary="Aufgabe 2 fertig">
+      <option name="closed" value="true" />
+      <created>1760114366984</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1760114366984</updated>
+    </task>
+    <task id="LOCAL-00004" summary="aufgabe 3 bis getDaysOfMonth">
+      <option name="closed" value="true" />
+      <created>1760279283467</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1760279283469</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+>>>>>>> 050f0fe36ca2edfa1c9fa3837130bbbd4e75bbaf
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -124,8 +163,25 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init 2" />
     <MESSAGE value="beaver aufgabe fertig" />
+<<<<<<< HEAD
     <MESSAGE value="push" />
     <MESSAGE value="aufgab2 teilweise fertig" />
     <option name="LAST_COMMIT_MESSAGE" value="aufgab2 teilweise fertig" />
+=======
+    <MESSAGE value="Aufgabe 2 fertig" />
+    <MESSAGE value="aufgabe 3 bis getDaysOfMonth" />
+    <option name="LAST_COMMIT_MESSAGE" value="aufgabe 3 bis getDaysOfMonth" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ExcerciseSet03.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+>>>>>>> 050f0fe36ca2edfa1c9fa3837130bbbd4e75bbaf
   </component>
 </project>
