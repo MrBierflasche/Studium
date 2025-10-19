@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bdf54c8d-f5db-472a-a6a9-de70b5cf337b" name="Changes" comment="workspace Datei Fehlerhaft nach Merch">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Training25VPrinter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Training25VPrinter.java" afterDir="false" />
+    <list default="true" id="bdf54c8d-f5db-472a-a6a9-de70b5cf337b" name="Changes" comment="Übungsblatt 3 fertig ohne optional">
+      <change beforePath="$PROJECT_DIR$/src/ExcerciseSet02.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ExcerciseSet02.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,29 +15,33 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "MrBierflasche"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;MrBierflasche&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/MrBierflasche/Studium.git",
-    "accountId": "70023124-4375-4af2-9a81-0263f2dee44f"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/MrBierflasche/Studium.git&quot;,
+    &quot;accountId&quot;: &quot;70023124-4375-4af2-9a81-0263f2dee44f&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 8
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="3490lSnXv3UkGvoUikICihKs55n" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.ExcerciseSet02.executor": "Run",
     "Application.ExcerciseSet03.executor": "Run",
     "Application.Training25VPrinter.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",

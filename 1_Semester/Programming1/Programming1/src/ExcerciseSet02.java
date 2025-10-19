@@ -24,7 +24,7 @@ public class ExcerciseSet02 {
                 row += " ";
             }
             // Punkte pro Reihe hinzufügen
-            for (int j = 0; j < i; j++) {
+            for (int j = 0; j <= i; j++) {
                 row += ".";
             }
 
