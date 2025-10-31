@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bdf54c8d-f5db-472a-a6a9-de70b5cf337b" name="Changes" comment="Aufgabe 2 eine Zeile zu wenig beim Bau zecihenen">
-      <change afterPath="$PROJECT_DIR$/src/ExerciseSet04.java" afterDir="false" />
+    <list default="true" id="bdf54c8d-f5db-472a-a6a9-de70b5cf337b" name="Changes" comment="Aufgabe 4 fertig">
+      <change afterPath="$PROJECT_DIR$/src/ExerciseSet05.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,27 +47,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.ExcerciseSet02.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ExcerciseSet03.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ExerciseSet04.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Training25VPrinter.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.ExcerciseSet02.executor": "Run",
+    "Application.ExcerciseSet03.executor": "Run",
+    "Application.ExerciseSet04.executor": "Run",
+    "Application.ExerciseSet05.executor": "Run",
+    "Application.Training25VPrinter.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "junie.onboarding.icon.badge.shown": "true",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -85,7 +86,8 @@
       <updated>1760610633448</updated>
       <workItem from="1760610635322" duration="1333000" />
       <workItem from="1761327092548" duration="5179000" />
-      <workItem from="1761661160222" duration="152000" />
+      <workItem from="1761661160222" duration="376000" />
+      <workItem from="1761927701404" duration="7452000" />
     </task>
     <task id="LOCAL-00001" summary="workspace Datei Fehlerhaft nach Merch">
       <option name="closed" value="true" />
@@ -103,7 +105,15 @@
       <option name="project" value="LOCAL" />
       <updated>1760878445282</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Aufgabe 4 fertig">
+      <option name="closed" value="true" />
+      <created>1761661519905</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1761661519905</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -112,7 +122,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="workspace Datei Fehlerhaft nach Merch" />
     <MESSAGE value="Aufgabe 2 eine Zeile zu wenig beim Bau zecihenen" />
-    <option name="LAST_COMMIT_MESSAGE" value="Aufgabe 2 eine Zeile zu wenig beim Bau zecihenen" />
+    <MESSAGE value="Aufgabe 4 fertig" />
+    <option name="LAST_COMMIT_MESSAGE" value="Aufgabe 4 fertig" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
