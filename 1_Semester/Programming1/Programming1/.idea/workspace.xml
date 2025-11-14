@@ -4,9 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bdf54c8d-f5db-472a-a6a9-de70b5cf337b" name="Changes" comment="Aufgabe 4 fertig">
-      <change afterPath="$PROJECT_DIR$/src/ExerciseSet05.java" afterDir="false" />
+    <list default="true" id="bdf54c8d-f5db-472a-a6a9-de70b5cf337b" name="Changes" comment="Aufgabe 5 fertig">
+      <change afterPath="$PROJECT_DIR$/src/basic/ExerciseSet06.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ExcerciseSet02.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/basic/ExcerciseSet02.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ExcerciseSet03.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/basic/ExcerciseSet03.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ExerciseSet04.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/basic/ExerciseSet04.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ExerciseSet05.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/basic/ExerciseSet05.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Terminal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/basic/Terminal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Training25BeaverDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/basic/Training25BeaverDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Training25VPrinter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/basic/Training25VPrinter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +42,9 @@
     &quot;accountId&quot;: &quot;9e55eaf6-66e2-4b8c-9d89-ae02b5160ec2&quot;
   }
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 8
@@ -53,6 +63,7 @@
     "Application.ExcerciseSet03.executor": "Run",
     "Application.ExerciseSet04.executor": "Run",
     "Application.ExerciseSet05.executor": "Run",
+    "Application.ExerciseSet06.executor": "Run",
     "Application.Training25VPrinter.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -69,6 +80,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="basic" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -87,7 +103,8 @@
       <workItem from="1760610635322" duration="1333000" />
       <workItem from="1761327092548" duration="5179000" />
       <workItem from="1761661160222" duration="376000" />
-      <workItem from="1761927701404" duration="7452000" />
+      <workItem from="1761927701404" duration="7770000" />
+      <workItem from="1763136553899" duration="8139000" />
     </task>
     <task id="LOCAL-00001" summary="workspace Datei Fehlerhaft nach Merch">
       <option name="closed" value="true" />
@@ -113,7 +130,15 @@
       <option name="project" value="LOCAL" />
       <updated>1761661519905</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Aufgabe 5 fertig">
+      <option name="closed" value="true" />
+      <created>1761935530222</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1761935530222</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -123,22 +148,10 @@
     <MESSAGE value="workspace Datei Fehlerhaft nach Merch" />
     <MESSAGE value="Aufgabe 2 eine Zeile zu wenig beim Bau zecihenen" />
     <MESSAGE value="Aufgabe 4 fertig" />
-    <option name="LAST_COMMIT_MESSAGE" value="Aufgabe 4 fertig" />
+    <MESSAGE value="Aufgabe 5 fertig" />
+    <option name="LAST_COMMIT_MESSAGE" value="Aufgabe 5 fertig" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/ExcerciseSet03.java</url>
-          <line>13</line>
-          <properties class="ExcerciseSet03" method="getDayOfTheWeek">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
         <watch expression="asciiPos" />

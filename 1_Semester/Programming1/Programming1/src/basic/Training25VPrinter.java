@@ -1,3 +1,5 @@
+package basic;
+
 public class Training25VPrinter {
     private static void printV(int size) {
         int row = 0;

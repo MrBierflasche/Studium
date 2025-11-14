@@ -1,6 +1,8 @@
+package basic;
+
 public class ExcerciseSet03 {
     public static void main(String[] args) {
-        //printName(Terminal.readString("Bitte geben Sie ihren Namen ein"));
+        //printName(basic.Terminal.readString("Bitte geben Sie ihren Namen ein"));
         //planProject();
 //       System.out.println("Anzahl Tage des Monats: " + getDaysOfMonth(1, 2000));
 //       System.out.println("Anzahl Tage des Monats: " + getDaysOfMonth(4, 2000));

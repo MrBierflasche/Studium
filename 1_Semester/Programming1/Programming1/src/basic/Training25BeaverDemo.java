@@ -1,3 +1,5 @@
+package basic;
+
 public class Training25BeaverDemo {
     public static void main(String[] args) {
         int population = 6;

@@ -1,4 +1,5 @@
-import java.io.BufferedReader;
+package basic;
+
 import java.util.ArrayList;
 import java.util.List;
 
