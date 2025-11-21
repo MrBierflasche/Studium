@@ -4,11 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bdf54c8d-f5db-472a-a6a9-de70b5cf337b" name="Changes" comment="Aufgabe 6 fertig">
-      <change afterPath="$PROJECT_DIR$/src/moritz/prog1/exercises/set07/Point.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/moritz/prog1/exercises/set07/Polygon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/moritz/prog1/exercises/set07/PolygonTest.java" afterDir="false" />
+    <list default="true" id="bdf54c8d-f5db-472a-a6a9-de70b5cf337b" name="Changes" comment="Aufgabe 5 fertig">
+      <change afterPath="$PROJECT_DIR$/src/basic/ExerciseSet06.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ExcerciseSet02.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/basic/ExcerciseSet02.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ExcerciseSet03.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/basic/ExcerciseSet03.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ExerciseSet04.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/basic/ExerciseSet04.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ExerciseSet05.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/basic/ExerciseSet05.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Terminal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/basic/Terminal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Training25BeaverDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/basic/Training25BeaverDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Training25VPrinter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/basic/Training25VPrinter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +64,6 @@
     "Application.ExerciseSet04.executor": "Run",
     "Application.ExerciseSet05.executor": "Run",
     "Application.ExerciseSet06.executor": "Run",
-    "Application.PolygonTest.executor": "Run",
     "Application.Training25VPrinter.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -100,9 +104,7 @@
       <workItem from="1761327092548" duration="5179000" />
       <workItem from="1761661160222" duration="376000" />
       <workItem from="1761927701404" duration="7770000" />
-      <workItem from="1763136553899" duration="8252000" />
-      <workItem from="1763209533079" duration="68000" />
-      <workItem from="1763486839962" duration="7045000" />
+      <workItem from="1763136553899" duration="8139000" />
     </task>
     <task id="LOCAL-00001" summary="workspace Datei Fehlerhaft nach Merch">
       <option name="closed" value="true" />
@@ -136,15 +138,7 @@
       <option name="project" value="LOCAL" />
       <updated>1761935530222</updated>
     </task>
-    <task id="LOCAL-00005" summary="Aufgabe 6 fertig">
-      <option name="closed" value="true" />
-      <created>1763144821353</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1763144821353</updated>
-    </task>
-    <option name="localTasksCounter" value="6" />
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -155,8 +149,7 @@
     <MESSAGE value="Aufgabe 2 eine Zeile zu wenig beim Bau zecihenen" />
     <MESSAGE value="Aufgabe 4 fertig" />
     <MESSAGE value="Aufgabe 5 fertig" />
-    <MESSAGE value="Aufgabe 6 fertig" />
-    <option name="LAST_COMMIT_MESSAGE" value="Aufgabe 6 fertig" />
+    <option name="LAST_COMMIT_MESSAGE" value="Aufgabe 5 fertig" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
