@@ -1,12 +1,10 @@
 package moritz.prog1.exercises.set09;
 
-import java.util.Arrays;
-
 public class MySortingAlgorithm {
 
     static void main() {
 
-        SortingTool sTool = new SortingTool();
+        MySortingTool sTool = new MySortingTool();
         sTool.setInitData(10, false);
 
         sTool.performExperiment(Algorithmus.BUBBLESORT);
