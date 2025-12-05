@@ -15,6 +15,13 @@ public class Game {
        }
     }
 
+    public void moveTover (Rod start, Rod destination, Rod depot ,int numOfDisks){
+        if(numOfDisks == 0){
+            return;
+        }
+
+    }
+
     public void moveDisk(Rod r1, Rod r2){
         Disk d = r1.pop();
         r2.push(d);
