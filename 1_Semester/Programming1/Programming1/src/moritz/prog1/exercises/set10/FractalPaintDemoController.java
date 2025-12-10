@@ -27,11 +27,11 @@ public class FractalPaintDemoController extends AbstractController {
 	/** Returns the names of three buttons. */
 	@Override
 	public String[] getButtonNames() {
-		return new String[] { "30 Deg", "42 Deg", "45 Deg", "Random Deg", "Simple Fractal1" };
+		return new String[] { "30 Deg", "42 Deg", "45 Deg", "Random Deg", "Simple Fractal1", "Simple Fractal2" };
 	}
     // Standard Werte
     private int degree = 30;
-    private int maxDepth = 20;
+    private int maxDepth = 10;
     private PaintTool ptool;
 
 	/**
@@ -61,18 +61,65 @@ public class FractalPaintDemoController extends AbstractController {
             ptool.clearCanvas();
             simpleFractal();
             break;
+        case 5:
+            ptool.clearCanvas();
+            simpleFractal2();
+            break;
 		}
-
 	}
+
+    private void simpleFractal2() {
+        int cWidth = ptool.getCanvas().getWidth();
+        int cHeight = ptool.getCanvas().getHeight();
+
+        // Startpunkte der Grundlinie dynamisch anhand der Canvas-Größe
+        Vector2D start = new Vector2D(cWidth * 0.2, cHeight * 0.8);
+        Vector2D end = new Vector2D(cWidth * 0.8, cHeight * 0.8);
+
+        // Nur die Grundlinie zeichnen
+        if (this.maxDepth == 0){
+            ptool.addLine((int)start.getX(), (int)start.getY(), (int)end.getX(), (int)end.getY());
+            return;
+        }
+        drawFractalColored(start, end, 0);
+    }
+
+    private void drawFractalColored(Vector2D a, Vector2D b, int depth) {
+        // Rekursion beenden
+        if (depth >= this.maxDepth) {
+            return;
+        }
+
+        Vector2D c = computeThirdPoint(a, b, this.degree);
+
+        // Zwei Farben im Wechsel
+        Color col = (depth % 2 == 0) ? Color.RED : Color.BLUE;
+        ptool.setColor(col);
+
+        // Dreieck ausfüllen
+        int[] xCoord = {(int)a.getX(), (int)b.getX(), (int)c.getX()};
+        int[] yCoord = {(int)a.getY(), (int)b.getY(), (int)c.getY()};
+        ptool.addPolygon(xCoord, yCoord, true);
+
+        // Rekursion
+        drawFractalColored(a, c, depth + 1);
+        drawFractalColored(c, b, depth + 1);
+    }
+
 
     private void simpleFractal() {
         int cWidth = ptool.getCanvas().getWidth();
         int cHeight = ptool.getCanvas().getHeight();
 
         // Startpunkte der Grundlinie dynamisch anhand der Canvas-Größe
-        Vector2D start = new Vector2D(cWidth * 0.1, cHeight * 0.8);
-        Vector2D end = new Vector2D(cWidth * 0.9, cHeight * 0.8);
+        Vector2D start = new Vector2D(cWidth * 0.2, cHeight * 0.8);
+        Vector2D end = new Vector2D(cWidth * 0.8, cHeight * 0.8);
 
+        // Nur die Grundlinie zeichnen
+        if (this.maxDepth == 0){
+            ptool.addLine((int)start.getX(), (int)start.getY(), (int)end.getX(), (int)end.getY());
+            return;
+        }
         drawFractal(start, end, 0);
     }
 
