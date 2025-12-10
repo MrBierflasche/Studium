@@ -27,11 +27,11 @@ public class FractalPaintDemoController extends AbstractController {
 	/** Returns the names of three buttons. */
 	@Override
 	public String[] getButtonNames() {
-		return new String[] { "30 Deg", "42 Deg", "45 Deg", "Random Deg", "Simple Fractal1", "Simple Fractal2", "Pythagoras Tree" };
+		return new String[] { "30 Deg", "42 Deg", "45 Deg", "Random Deg", "Depth 1", "Depth 5", "Depth 10", "Depth 20", "Simple Fractal1", "Simple Fractal2", "Pythagoras Tree" };
 	}
     // Standard Werte
     private int degree = 30;
-    private int maxDepth = 20;
+    private int maxDepth = 10;
     private PaintTool ptool;
 
 	/**
@@ -53,23 +53,35 @@ public class FractalPaintDemoController extends AbstractController {
         case 2:
             this.setDegree(45);
             break;
-		case 3:
-			Random rand = new Random();
+        case 3:
+            Random rand = new Random();
             this.setDegree(rand.nextInt(0, 90));
-			break;
+            break;
         case 4:
+            this.setMaxDepth(1);
+            break;
+        case 5:
+            this.setMaxDepth(5);
+            break;
+        case 6:
+            this.setMaxDepth(10);
+            break;
+        case 7:
+            this.setMaxDepth(20);
+            break;
+        case 8:
             ptool.clearCanvas();
             ptool.setColor(Color.BLACK);
             ptool.addText(10, 20, "Max Depth: " + this.maxDepth);
             simpleFractal();
             break;
-        case 5:
+        case 9:
             ptool.clearCanvas();
             ptool.setColor(Color.BLACK);
             ptool.addText(10, 20, "Max Depth: " + this.maxDepth);
             simpleFractal2();
             break;
-        case 6:
+        case 10:
             ptool.clearCanvas();
             ptool.setColor(Color.BLACK);
             ptool.addText(10, 20, "Max Depth: " + this.maxDepth);
@@ -77,6 +89,9 @@ public class FractalPaintDemoController extends AbstractController {
 		}
 	}
 
+    private void setMaxDepth(int maxDepth) {
+        this.maxDepth = maxDepth;
+    }
     private void phythagorasTree() {
         int width = ptool.getCanvas().getWidth();
         int height = ptool.getCanvas().getHeight();
@@ -88,7 +103,7 @@ public class FractalPaintDemoController extends AbstractController {
     }
 
     private void drawPythagorasTree(Vector2D a, Vector2D b, int depth) {
-        if (depth > this.maxDepth) {
+        if (depth >= this.maxDepth) {
             return;
         }
 
@@ -119,6 +134,7 @@ public class FractalPaintDemoController extends AbstractController {
 
         // rechte Seite
         drawPythagorasTree(top, p2, depth + 1);
+        ptool.sleep(10);
     }
 
     private Color getBrownToGreenColor(int depth) {
@@ -178,6 +194,7 @@ public class FractalPaintDemoController extends AbstractController {
         // Rekursion
         drawFractalColored(a, c, depth + 1);
         drawFractalColored(c, b, depth + 1);
+        ptool.sleep(10);
     }
 
 
@@ -222,6 +239,7 @@ public class FractalPaintDemoController extends AbstractController {
         // Rekursive Aufrufe auf Katheten
         drawFractal(a, c, depth + 1);
         drawFractal( c, b, depth + 1);
+        ptool.sleep(10);
     }
 
     // Farbe abhängig von Tiefe
