@@ -27,11 +27,11 @@ public class FractalPaintDemoController extends AbstractController {
 	/** Returns the names of three buttons. */
 	@Override
 	public String[] getButtonNames() {
-		return new String[] { "30 Deg", "42 Deg", "45 Deg", "Random Deg", "Simple Fractal1", "Simple Fractal2" };
+		return new String[] { "30 Deg", "42 Deg", "45 Deg", "Random Deg", "Simple Fractal1", "Simple Fractal2", "Pythagoras Tree" };
 	}
     // Standard Werte
     private int degree = 30;
-    private int maxDepth = 10;
+    private int maxDepth = 20;
     private PaintTool ptool;
 
 	/**
@@ -59,14 +59,88 @@ public class FractalPaintDemoController extends AbstractController {
 			break;
         case 4:
             ptool.clearCanvas();
+            ptool.setColor(Color.BLACK);
+            ptool.addText(10, 20, "Max Depth: " + this.maxDepth);
             simpleFractal();
             break;
         case 5:
             ptool.clearCanvas();
+            ptool.setColor(Color.BLACK);
+            ptool.addText(10, 20, "Max Depth: " + this.maxDepth);
             simpleFractal2();
             break;
+        case 6:
+            ptool.clearCanvas();
+            ptool.setColor(Color.BLACK);
+            ptool.addText(10, 20, "Max Depth: " + this.maxDepth);
+            phythagorasTree();
 		}
 	}
+
+    private void phythagorasTree() {
+        int width = ptool.getCanvas().getWidth();
+        int height = ptool.getCanvas().getHeight();
+
+        Vector2D a = new Vector2D(width * 0.5, height * 0.8);
+        Vector2D b = new Vector2D(width * 0.6, height * 0.8);
+
+        drawPythagorasTree(a, b, 0);
+    }
+
+    private void drawPythagorasTree(Vector2D a, Vector2D b, int depth) {
+        if (depth > this.maxDepth) {
+            return;
+        }
+
+        Vector2D ab = b.minus(a); // Grundlinie
+        double side = ab.vlength(); // Länge der Quadratseite
+        Vector2D rotated = ab.rotate(-90); // Drehung des Grundlinienvektors (Bildschirm-Koordinaten: -90 Grad
+        Vector2D normalized = rotated.mult(1.0 / side); // Normalisieren
+        Vector2D heightVec = normalized.mult(side); // Auf Quadrat-Seitenlänge skalieren
+
+        // Quadrateckpunkte
+        Vector2D p0 = a;
+        Vector2D p1 = b;
+        Vector2D p2 = b.plus(heightVec);
+        Vector2D p3 = a.plus(heightVec);
+
+        // Farbe je nach Tiefe (immer grüner)
+        Color color = getBrownToGreenColor(depth);
+        ptool.setColor(color);
+        // Quadrat zeichnen
+        int[] xs = {(int)p0.getX(), (int)p1.getX(), (int)p2.getX(), (int)p3.getX()};
+        int[] ys = {(int)p0.getY(), (int)p1.getY(), (int)p2.getY(), (int)p3.getY()};
+        ptool.addPolygon(xs, ys, true);
+
+        // Zwei neue Grundlinien berechnen
+        // linke Seite
+        Vector2D top = computeThirdPoint(p3, p2, degree);
+        drawPythagorasTree(p3, top, depth + 1);
+
+        // rechte Seite
+        drawPythagorasTree(top, p2, depth + 1);
+    }
+
+    private Color getBrownToGreenColor(int depth) {
+        // Startfarbe (braun)
+        int rStart = 139;
+        int gStart = 69;
+        int bStart = 19;
+
+        // Zielfarbe (grün)
+        int rEnd = 0;
+        int gEnd = 255;
+        int bEnd = 0;
+
+        // Mischfaktor abhängig von depth zw. 0 bis 1
+        double t = Math.min(1.0, depth / 15.0);
+
+        int r = (int)(rStart + t * (rEnd - rStart));
+        int g = (int)(gStart + t * (gEnd - gStart));
+        int b = (int)(bStart + t * (bEnd - bStart));
+
+        return new Color(r, g, b);
+    }
 
     private void simpleFractal2() {
         int cWidth = ptool.getCanvas().getWidth();
