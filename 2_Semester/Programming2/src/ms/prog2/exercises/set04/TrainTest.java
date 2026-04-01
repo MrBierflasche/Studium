@@ -29,7 +29,9 @@ public class TrainTest {
         // 8. Die Wagenreihenfolge im „Rio Grande Express“ wird umgedreht.
         rioGrande.revert();
 
-        System.out.println("Rio Grande Express:");
+        System.out.println("Santa Fe:");
+        System.out.println(santaFe);
+        System.out.println("\nRio Grande Express:");
         System.out.println(rioGrande);
     }
 }

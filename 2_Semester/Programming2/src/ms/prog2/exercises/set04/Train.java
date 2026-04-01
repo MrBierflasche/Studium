@@ -52,7 +52,7 @@ public class Train {
 
     // liefert die Länge des Zuges in Metern.
     private int getLength(){
-        int sum = locomotive.getFirst().getLength();
+        int sum =  locomotive.getLength();
         Car  current = locomotive.getFirst();
 
         while(current != null){
