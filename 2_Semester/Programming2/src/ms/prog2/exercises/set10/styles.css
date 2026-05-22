@@ -1,0 +1,41 @@
+/* hölzerne Spieltisch */
+.game-table {
+    -fx-background-image: url('https://images.unsplash.com/photo-1541123437800-1bb1317badc2?q=80&w=600');
+    -fx-background-size: cover;
+}
+
+/* Menüleiste oben */
+.top-menu-bar {
+    -fx-background-color: #f5f5f5;
+    -fx-border-color: #d3d3d3;
+    -fx-border-width: 0 0 1px 0;
+}
+
+/* Statuszeile unten */
+.status-text {
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+/* Gemeinsame Basisdesign für alle Karten */
+.memory-card {
+    -fx-background-radius: 6px;
+    -fx-border-radius: 6px;
+    -fx-border-color: #3e2723;
+    -fx-border-width: 2px;
+}
+
+/* Karte gehört Spieler Blau */
+.card-owned-blue {
+    -fx-background-image: null; /* Entfernt das Spielerbild */
+    -fx-background-color: #0000FF;
+    -fx-border-color: #00008B;
+}
+
+/* Karte gehört Spieler Rot */
+.card-owned-red {
+    -fx-background-image: null; /* Entfernt das Spielerbild */
+    -fx-background-color: #FF0000;
+    -fx-border-color: #8B0000;
+}
