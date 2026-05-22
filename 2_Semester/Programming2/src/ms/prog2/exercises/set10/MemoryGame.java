@@ -34,10 +34,11 @@ public class MemoryGame {
     public void newGame() {
         cards.clear();
 
-        // Jede Karte doppelt hinzufügen
+        // Jede Karte doppelt hinzufügen und den Bildnamen generieren (.jpg)
         for (String title : initialTitles) {
-            cards.add(new MemoryCard(title));
-            cards.add(new MemoryCard(title));
+            String imageName = title + ".jpg"; // Dynamisch generierter Dateiname
+            cards.add(new MemoryCard(title, imageName));
+            cards.add(new MemoryCard(title, imageName));
         }
 
         // Karten mischen
@@ -49,6 +50,7 @@ public class MemoryGame {
         scorePlayer2.set(0);
         turnState = 0;
         firstCard = null;
+        secondCard = null;
     }
 
     public int getNumOfCards() {
@@ -78,7 +80,6 @@ public class MemoryGame {
 
      // Zentrale Spiellogik. Wird aufgerufen, wenn eine Karte angeklickt wird.
     public void turnCard(int index) {
-        // Index-Validierung
         if (index < 0 || index >= cards.size()){
             return;
         }

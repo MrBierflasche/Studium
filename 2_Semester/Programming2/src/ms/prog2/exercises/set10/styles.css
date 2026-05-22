@@ -1,7 +1,6 @@
 /* hölzerne Spieltisch */
 .game-table {
-    -fx-background-image: url('https://images.unsplash.com/photo-1541123437800-1bb1317badc2?q=80&w=600');
-    -fx-background-size: cover;
+    -fx-background-image: url('Holz.jpg');
 }
 
 /* Menüleiste oben */
@@ -24,18 +23,17 @@
     -fx-border-radius: 6px;
     -fx-border-color: #3e2723;
     -fx-border-width: 2px;
+    -fx-background-color: #cccccc;
 }
 
 /* Karte gehört Spieler Blau */
 .card-owned-blue {
-    -fx-background-image: null; /* Entfernt das Spielerbild */
     -fx-background-color: #0000FF;
     -fx-border-color: #00008B;
 }
 
 /* Karte gehört Spieler Rot */
 .card-owned-red {
-    -fx-background-image: null; /* Entfernt das Spielerbild */
     -fx-background-color: #FF0000;
     -fx-border-color: #8B0000;
 }

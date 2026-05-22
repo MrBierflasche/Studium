@@ -26,6 +26,7 @@ public class MemoryFxApp extends Application {
 
         game = new MemoryGame(footballPlayers);
         BorderPane root = new BorderPane();
+        root.getStyleClass().add("game-table");
 
         // Menuleiste
         MenuBar menuBar = createMenuBar();
@@ -45,6 +46,7 @@ public class MemoryFxApp extends Application {
         bottomBar.setAlignment(Pos.CENTER);
 
         statusLabel = new Label();
+        statusLabel.getStyleClass().add("status-text");
         bottomBar.getChildren().add(statusLabel);
         root.setBottom(bottomBar);
 
@@ -52,7 +54,7 @@ public class MemoryFxApp extends Application {
         initializeGrid();
         updateStatusLabel();
 
-        // automatiscer Textaktualiserung unten
+        // automatische Textaktualiserung unten
         game.currPlayerProperty().addListener((obs, oldVal, newVal) -> updateStatusLabel());
 
         Scene scene = new Scene(root, 750, 550);
@@ -64,6 +66,7 @@ public class MemoryFxApp extends Application {
 
     private MenuBar createMenuBar() {
         MenuBar menuBar = new MenuBar();
+        menuBar.getStyleClass().add("top-menu-bar");
 
         Menu fileMenu = new Menu("File");
 
@@ -101,13 +104,13 @@ public class MemoryFxApp extends Application {
             MemoryCard card = game.getCard(index);
 
             Button cardButton = new Button();
-            // Rechteckiges Kartenformat
             cardButton.setPrefSize(140, 105);
+
+            cardButton.getStyleClass().add("memory-card");
 
             // Karte drehen
             cardButton.setOnAction(e -> {
                 game.turnCard(index);
-
                 if (game.isGameOver()) {
                     int score1 = game.getScore(1);
                     int score2 = game.getScore(2);
@@ -127,29 +130,42 @@ public class MemoryFxApp extends Application {
             // Reagiert auf das Umdrehen der Karte
             card.revealedProperty().addListener((obs, wasRevealed, isRevealed) -> {
                 if (isRevealed) {
-                    // Vorderseite: Zeigt den Spieler an
-                    cardButton.setText(card.getTitle());
+                    try {
+                        // Dynamisches Laden des Bildes
+                        String image = this.getClass().getResource(card.getImageName()).toExternalForm();
+                        cardButton.setStyle("-fx-background-image: url('" + image + "'); -fx-background-size: cover;");
+                    } catch (Exception e) {
+                        // Fallback, falls die Bilddatei im Ordner fehlt
+                        cardButton.setText(card.getTitle());
+                        cardButton.setStyle("-fx-background-color: #222222; -fx-text-fill: white; -fx-font-weight: bold;");
+                    }
                 } else {
-                    // Zurück zur Rückseite
-                    cardButton.setText("");
+                    // Zurück zur Rückseite (falls die Karte keinen Besitzer hat)
+                    if (card.getOwner() == 0) {
+                        cardButton.setText("");
+                        cardButton.setStyle("-fx-background-color: #cccccc;");
+                    }
                 }
             });
 
-            // Reagiert auf den Gewinn der Karte (Blau oder Rot)
+            // Reagiert auf den Gewinn der Karte
             card.ownerProperty().addListener((obs, oldOwner, newOwner) -> {
                 int owner = newOwner.intValue();
+
+                // alle zustandsabhängigen Styles vorab runter
+                cardButton.getStyleClass().removeAll("card-owned-blue", "card-owned-red");
+                cardButton.setStyle(null);
+                cardButton.setText("");
+
                 if (owner == 1) {
-                    // Spieler Blau besitzt die Karte
-                    cardButton.setText("Blau");
+                    cardButton.getStyleClass().add("card-owned-blue"); // Aktiviert flächig Blau aus CSS
                     cardButton.setDisable(true);
                 } else if (owner == 2) {
-                    // Spieler Rot besitzt die Karte
-                    cardButton.setText("Rot");
+                    cardButton.getStyleClass().add("card-owned-red");  // Aktiviert flächig Rot aus CSS
                     cardButton.setDisable(true);
                 } else {
                     // Reset bei neuem Spiel
                     cardButton.setDisable(false);
-                    cardButton.setText("");
                 }
             });
 
