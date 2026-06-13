@@ -4,9 +4,8 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.shape.Circle;
-import javafx.scene.paint.Color;
 
-public class ConnectFourController implements GameListener {
+public class ConnectFourController {
     // FXML-Felder
     @FXML private Button btnNewGame;
     @FXML private Label  lblStatus;
@@ -23,15 +22,12 @@ public class ConnectFourController implements GameListener {
     @FXML private Circle c50, c51, c52, c53, c54, c55, c56;
 
     private ConnectFourModel model;
-    private Circle[][] circles;
 
-    // Initialisierung
     @FXML
     public void initialize() {
         model = new ConnectFourModel();
-        model.setListener(this);
 
-        circles = new Circle[][] {
+        Circle[][] circles = new Circle[][] {
                 {c00, c01, c02, c03, c04, c05, c06},
                 {c10, c11, c12, c13, c14, c15, c16},
                 {c20, c21, c22, c23, c24, c25, c26},
@@ -40,10 +36,14 @@ public class ConnectFourController implements GameListener {
                 {c50, c51, c52, c53, c54, c55, c56}
         };
 
-        updateView();
+        Button[] columnButtons = new Button[] { col0, col1, col2, col3, col4, col5, col6 };
+        ConnectFourView view = new ConnectFourView(model, circles, lblStatus, columnButtons );
+
+        // Erstanzeige manuell anstoßen
+        view.onBoardChanged();
     }
 
-    // Button-Handler
+    // Button-Handlers
     @FXML
     private void handleNewGame() {
         model.newGame();
@@ -63,61 +63,4 @@ public class ConnectFourController implements GameListener {
     private void handleCol5() { model.makeMove(5); }
     @FXML
     private void handleCol6() { model.makeMove(6); }
-
-    // GameListener
-    @Override
-    public void onBoardChanged() {
-        updateView();
-    }
-
-    @Override
-    public void onGameOver(char winner) {
-        updateView();
-        if (winner == ConnectFourGame.EMPTY) {
-            lblStatus.setText("Draw! No more moves.");
-        } else {
-            String name = (winner == ConnectFourGame.RED) ? "Red" : "Yellow";
-            String color = (winner == ConnectFourGame.RED) ? "red" : "#f5c000";
-            lblStatus.setText(name + " wins!");
-        }
-        // Spalten-Buttons deaktivieren
-        setColumnButtonsDisabled(true);
-    }
-
-    private void updateView() {
-        // Kreise aktualisieren
-        for (int row = 0; row < ConnectFourGame.ROWS; row++) {
-            for (int col = 0; col < ConnectFourGame.COLS; col++) {
-                circles[row][col].setFill(cellColor(model.getCell(row, col)));
-            }
-        }
-
-        // Spalten-Buttons aktivieren/deaktivieren
-        setColumnButtonsDisabled(model.isGameOver());
-
-        // Status-Label aktualisieren
-        if (!model.isGameOver()) {
-            char p = model.getCurrentPlayer();
-            String name  = (p == ConnectFourGame.RED) ? "Red" : "Yellow";
-            lblStatus.setText("Next move: " + name);
-        }
-    }
-
-    private Color cellColor(char cell) {
-        return switch (cell) {
-            case ConnectFourGame.RED    -> Color.RED;
-            case ConnectFourGame.YELLOW -> Color.YELLOW;
-            default                     -> Color.web("#0a2a52");
-        };
-    }
-
-    private void setColumnButtonsDisabled(boolean disabled) {
-        col0.setDisable(disabled);
-        col1.setDisable(disabled);
-        col2.setDisable(disabled);
-        col3.setDisable(disabled);
-        col4.setDisable(disabled);
-        col5.setDisable(disabled);
-        col6.setDisable(disabled);
-    }
 }

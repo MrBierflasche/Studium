@@ -1,7 +1,6 @@
 package ms.prog2.exercises.set12;
 
 public class ConnectFourModel {
-
     private final ConnectFourGame game;
     private GameListener listener;
 
@@ -25,7 +24,7 @@ public class ConnectFourModel {
         }
     }
 
-    //Neues Spiel starten.
+    //Neues Spiel starten
     public void newGame() {
         game.newGame();
         if (listener != null) {
@@ -37,6 +36,4 @@ public class ConnectFourModel {
     public char getCell(int row, int col)  { return game.getCell(row, col); }
     public char getCurrentPlayer()          { return game.getCurrentPlayer(); }
     public boolean isGameOver()             { return game.isGameOver(); }
-    public char getWinner()                 { return game.getWinner(); }
-    public boolean isValidMove(int col)     { return game.isValidMove(col); }
 }
