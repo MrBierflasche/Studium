@@ -1,0 +1,14 @@
+{
+    "python.defaultInterpreterPath": "C:\\Users\\morit\\anaconda3\\envs\\ml\\python.exe",
+    "terminal.integrated.profiles.windows": {
+        "PowerShell Workspace ML": {
+            "source": "PowerShell",
+            "args": [
+                "-NoExit",
+                "-Command",
+                "& 'C:\\Users\\morit\\anaconda3\\shell\\condabin\\conda-hook.ps1'; conda activate ml"
+            ]
+        }
+    },
+    "terminal.integrated.defaultProfile.windows": "PowerShell Workspace ML"
+}
