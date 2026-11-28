@@ -1,0 +1,15 @@
+case;complaints;customer;meters;tariff;churn
+1;many;M;single;eco;yes
+2;many;M;single;classic;yes
+3;none;M;single;eco;no
+4;some;F;single;eco;no
+5;some;U;multiple;eco;no
+6;some;U;multiple;classic;yes
+7;none;U;multiple;classic;no
+8;many;F;single;eco;yes
+9;many;U;multiple;eco;no
+10;some;F;multiple;eco;no
+11;many;F;multiple;classic;no
+12;none;F;single;classic;no
+13;none;M;multiple;eco;no
+14;some;F;single;classic;yes
